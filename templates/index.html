@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static '/images/logo.png' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>{% block head_title %}Avia Logistic{% endblock head_title %}</title>
+    {% block CSS %}{% endblock CSS%}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/set1.css' %}" />
+</head>
+<body>
+{% include 'snippets/navbar.html' %}
+{% include 'main.html' %}
+{% include 'snippets/bootstrap_v4.0.html' %}
+
+
+{# ----Footer-----#}
+<div class="panel panel-default" >
+    <div class="panel-footer">
+      <div class="container" style="background:url({% static '/images/navbar/footer.png' %});">
+          <div class="col" style="font-size:1vw; color:#fa7236">
+              <hr style="background-color:#fa7236;">
+        Copyright &#169; 2017 Avia Logistic. All rights reserved.
+          <div style="float:right; margin-top:-10px;padding-top:-20px"><img src="{% static '/images/ukraine_640.png' %}" width="40px"> <span style="font-family:'Great Vibes', cursive; font-size:2vw; color:#307ab7">Ukraine</span></div>
+          <hr style="background-color:#fa7236;">
+        </div>
+      </div>
+    </div>
+</div>
+{# ----Footer-----#}
+</body>
+</html>

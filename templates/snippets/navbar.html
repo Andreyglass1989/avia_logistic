@@ -1,0 +1,136 @@
+{% load static %}
+
+{% block CSS %}
+
+    <style>
+    ul>li.nav-item>a.nav-link{
+     color:#fff;
+     font-size:16px;
+     margin-left:5%;
+     margin-top:10px;
+     margin-bottom:0px;
+     }
+     ul>li.nav-item>a.nav-link:hover {
+     color:#fa7236;
+     opacity:0.98;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+    }
+
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+        }
+
+
+    .container-1 input#search{
+        width: 300px;
+        height: 50px;
+        background: #2b303b;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #63717f;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        }
+
+    .container-1 input#search::-webkit-input-placeholder {
+        color: #65737e;
+        }
+
+        .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #65737e;
+        }
+
+        .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+        color: #65737e;
+        }
+
+
+        .container-1 input#search:-ms-input-placeholder {
+        color: #65737e;
+        }
+
+.container-1 .icon{
+position: absolute;
+top: 50%;
+margin-left: 7px;
+margin-top: -10px;
+z-index: 100;
+color: #4f5b66;
+}
+
+a.navbar-brand{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+    </style>
+{% endblock CSS %}
+
+<div class="container-fluid pl-0 pr-0" style="min-height:650px; background: url({% static '/images/avia03.jpg' %}) no-repeat; background-size:cover; background-attachment:fixed; clear:both">
+
+              {#------NavBAR------#}
+  <nav class="navbar navbar-expand-md" style="background:url({% static '/images/navbar/main.png' %}); padding: .0rem 1rem;">
+      <div class="container" style="opacity:1.0">
+          <a class="navbar-brand ml-3"  href="#" style="padding-right: 0">
+            <img src="{% static 'images/logo.png' %}" width="40%"; height="40%" alt="Avia Logistic"/>
+          </a>
+          <h5 style="font-family:'Playfair Display SC', serif; color:#fff; margin-left:-20px">AVIA LOGISTIC</h5>
+
+           <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseLinks" aria-controls="navbarCollapseLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+           </button>
+
+
+          <div class="collapse navbar-collapse ml-auto col-5 mr-0" id="navbarCollapseLinks" style="max-width: 65%; float:right">
+
+              <ul class="navbar-nav cl-effect-21">
+                  <li class="nav-item">
+                   <div class="form-inline input-group container-1 ml-auto">
+                       <span class="icon"><i class="fa fa-search"></i></span>
+                    <input class="form-control mr-sm-2" style="padding-left:1.75rem;" type="search" placeholder="найти посылку ..."  aria-label="Поиск">
+
+                   </div>
+
+                   </form>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Контакты</a>
+                  </li>
+                  <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>-->
+
+              </ul>
+
+          </div>
+      </div>
+
+  </nav>
+  {#------NavBAR------#}
+
+
+
+</div>

@@ -1,0 +1,111 @@
+{% load static %}
+
+
+{% block CSS %}
+    <style>
+     h4, h6, div.img-centr{
+      text-align:center;
+     }
+
+     h4{
+      font-weight: 800 !important;
+     }
+
+      div.img-centr>img{
+       height:400px;
+      }
+
+    </style>
+
+{% endblock CSS %}
+
+<div class="container" style="background: url({% static '/images/container_main1.png' %}); min-height:675px; margin-top:-15%; border-radius:40px">
+
+    <div class="grid">
+        <figure class="effect-ruby" style="border-radius:20px; min-height:300px; margin-left: 0px;">
+            <img src="{% static '/images/samolet-krylo-nebo-6377.jpg' %}" alt="img13"/>
+            <figcaption>
+                <h2>Быстрая <span> доставка</span></h2>
+                <p style="padding:1em">в десятки раз быстрее, чем наземными и водными видами транспорта</p>
+                <!--<a href="#">View more</a>-->
+            </figcaption>
+        </figure>
+        <figure class="effect-ruby" style="border-radius:20px; min-height:280px; height:307px; margin-left: 2%;">
+            <img src="{% static '/images/Terminal.jpg' %}" alt="img14"/>
+            <figcaption>
+                <h2>Безопасность <span>груза</span></h2>
+                <p style="padding:1em">На груз оказывается минимальное внешние воздействие</p>
+               <!-- <a href="#">View more</a>-->
+            </figcaption>
+        </figure>
+    </div>
+
+
+    <div class="grid" >
+        <figure class="effect-ruby" style="border-radius:20px; height:300px; margin-left: 0px;">
+            <img src="{% static '/images/ukr-china1.jpg' %}" height="100%"; alt="img13"/>
+            <figcaption>
+                <h2>Всего 2 <span> контроля</span></h2>
+                <p style=" padding:1em">при погрузке на самолет и при разгрузке, а не при пересечении каждой границы</p>
+                <!--<a href="#">View more</a>-->
+            </figcaption>
+        </figure>
+        <figure class="effect-ruby" style="border-radius:20px; min-height:300px; margin-left: 2%;">
+            <img src="{% static '/images/sklad.jpeg' %}" alt="img14"/>
+            <figcaption>
+                <h2>Консолидация</h2>
+                <p style="padding:1em">все консолидированные грузы вылетают и отправляются по мере их захода ближайшим рейсом</p>
+               <!-- <a href="#">View more</a>-->
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="container-fluid">
+<hr style="background-color:#fa7236; height:2px">
+<h2 style="text-align:center">Дополнительные услуги</h2>
+</div>
+
+   <div class="container">
+        <div style="text-align:center"><img src="{% static '/images/dostavka.jpg' %}"></div>
+       <h4>Доставка груза</h4>
+        <h6>Доставляем грузы от склада поставщика клиента к нам на склад</h6>
+        <hr>
+       <div class="img-centr"><img src="{% static '/images/doki.jpg' %}" height="70%"></div>
+       <h4>Документация</h4>
+        <h6>Подготавливаем все необходимые для транспортировки грузов документы (в том числе таможенные и страховые документы)</h6>
+        <hr>
+       <div class="img-centr"><img src="{% static '/images/sayfaresim.jpg' %}"></div>
+       <h4>Оптимальная упаковка</h4>
+        <h6>Упаковуем и переупаковываем груз под международные требования авиаперевозок</h6>
+        <hr>
+       <div class="img-centr"><img src="{% static 'images/hranenie.jpg' %}"></div>
+        <h4>Временное хранение груза</h4>
+        <h6>При необходимости храним грузы у себя на складе</h6>
+        <hr>
+       <div class="img-centr"><img src="{% static '/images/pogruzka.png' %}"></div>
+       <h4>Дополнительные работы</h4>
+        <h6>Осуществляем погрузочно-разгрузочные работы</h6>
+       <hr>
+       <div class="img-centr"><img src="{% static '/images/vozvrat_NDS.jpg' %}"></div>
+       <h4>Закрытие экспортных документов</h4>
+        <h6>Оформление необходимых документов, в том числе экспортных деклараций на вывоз товаров из страны-импортера – услуга, которая позволяет производителю дальнейший возврат НДС.</h6>
+       <hr>
+       <div class="img-centr"><img src="{% static '/images/fotootchet.jpg' %}"></div>
+       <h4>Фотоотчет и проверка товара</h4>
+        <h6>Предоставление фото с Китайского склада, подразумевает под собою подтверждение достоверности той или иной информации при возникновении спорного вопроса либо не уверенности в честности Вашего поставщика. Клиент оставляет за собою право запросить данный вид услуги при желании. Проверка направлена на идентификацию и определение отличительных особенностей (свойств) доставляемого товара, а также на соответствие количества согласно предоставленной описи груза. </h6>
+
+<hr style="background-color:#fa7236; height:2px">
+
+       <h4>Требования к грузу</h4>
+       <div class="img-centr"><img src="{% static '/images/cargo_pack.jpg' %}"></div>
+        <ul>В авиа перевозках предъявляются особые требования к грузу:
+           <li> Существуют ограничения в габаритах груза: вес не должен превышать 85 кг и не быть больше 110 см в длину. Такой груз считается негабаритным и подходит под перевозимые стандарты.
+           <li> перевозятся негабаритные грузы  и небольшими партиями.</li>
+           <li> к упаковке груза, она должна быть аккуратной, без нарушений, сухой и обеспечивать сохранность груза.</li>
+        </ul>
+
+</div>
+
+
+
